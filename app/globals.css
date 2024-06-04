@@ -30,21 +30,35 @@
     @apply text-[18px];
   }
   a {
-    @apply font-bold uppercase leading-none hover:text-accent transition-all duration-200;
+    @apply font-bold uppercase leading-none hover:text-accent transition-all duration-300;
   }
   .btn {
     @apply flex justify-center items-center h-[50px] px-8 text-white font-semibold uppercase;
   }
   .btn-icon {
-    @apply flex justify-center items-center w-[50px] h-[50px] text-2xl text-white;
+    @apply flex justify-center hover:bg-primary-hover items-center 
+    w-[50px] h-[50px] text-2xl text-white transition-all duration-300;
   }
   .btn-accent {
     @apply bg-accent hover:bg-accent-hover transition-all;
   }
   .btn-primary {
-    @apply bg-primary hover:bg-primary-hover transition-all;
+    @apply bg-primary hover:bg-primary-hover rounded-2xl transition-all duration-300;
   }
   .btn-white {
     @apply bg-white hover:bg-white/90 text-primary transition-all;
   }
 }
+
+.popular-products-slider .swiper-wrapper {
+  @apply !h-[500px];
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-primary;
+}
+/* .link-style {
+  @apply inline-block;
+} */

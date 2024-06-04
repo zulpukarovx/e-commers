@@ -1,9 +1,9 @@
-import PopularBikes from "@/components/PopularBikes";
+import PopularProducts from "@/components/PopularProducts";
 
 export default function Home() {
   return (
     <main>
-      <PopularBikes />
+      <PopularProducts />
     </main>
   );
 }
